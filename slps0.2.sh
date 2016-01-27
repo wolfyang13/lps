@@ -8,7 +8,7 @@ tar -zxvf src/dialog_1.1-20111020.orig.tar.gz -C src
 cd src/dialog-1.1-20111020
 ./configure && make && make install
 
-#### Notice
+#### Notice message
 dialog --title "Linux performance suite" --msgbox "
         This is a testing framwork for performance test.
         If you want to run manually, you can check:
@@ -16,6 +16,12 @@ dialog --title "Linux performance suite" --msgbox "
         The log and result will be put on: 
         lps/log
         " 20 60
+#### Make folder
+if [ -d bin ] ; then 
+    echo " bin folder is exist. "
+else 
+    mkdir bin
+
 
 #### menu, select the test case
 dialog --title "Please select the test case" --checklist "Test case" 20 60 14 \
