@@ -1,0 +1,4 @@
+This folder is put on the temp file.
+temp file will be genrated when performance test running.
+temp file will be clean after the test is done.
+Usually this folder will be empty.
